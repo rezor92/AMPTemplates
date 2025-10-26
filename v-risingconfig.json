@@ -10,7 +10,7 @@
         "IsFlagArgument": false,
         "ParamFieldName": "GameDifficulty",
         "IncludeInCommandLine": false,
-        "DefaultValue": "Normal",
+        "DefaultValue": "1",
         "EnumValues": {
             "0": "Relaxed - Bosses will in general not use too complex mechanics",
             "1": "Normal - Bosses will use the default mechanics",
@@ -833,7 +833,7 @@
         "IsFlagArgument": false,
         "ParamFieldName": "CastleRaidTimer",
         "IncludeInCommandLine": false,
-        "DefaultValue": 60,
+        "DefaultValue": 600,
         "MinValue": 60,
         "MaxValue": 3600,
         "Suffix": "seconds"
@@ -849,7 +849,7 @@
         "IsFlagArgument": false,
         "ParamFieldName": "CastleRaidProtectionTime",
         "IncludeInCommandLine": false,
-        "DefaultValue": 60,
+        "DefaultValue": 1800,
         "MinValue": 60,
         "MaxValue": 604800,
         "Suffix": "seconds"
@@ -1729,7 +1729,7 @@
         "IsFlagArgument": false,
         "ParamFieldName": "$.CastleStatModifiers_Global.PrisonCellLimit",
         "IncludeInCommandLine": false,
-        "DefaultValue": 16,
+        "DefaultValue": 24,
         "MinValue": 0
     },
     {
@@ -1846,7 +1846,7 @@
         "IsFlagArgument": false,
         "ParamFieldName": "$.CastleStatModifiers_Global.HeartLimits.Level1.ServantLimit",
         "IncludeInCommandLine": false,
-        "DefaultValue": 4,
+        "DefaultValue": 1,
         "MinValue": 0,
         "MaxValue": 35
     },
@@ -1861,7 +1861,7 @@
         "IsFlagArgument": false,
         "ParamFieldName": "$.CastleStatModifiers_Global.HeartLimits.Level1.HeightLimit",
         "IncludeInCommandLine": false,
-        "DefaultValue": 1,
+        "DefaultValue": 3,
         "MinValue": 0,
         "MaxValue": 255
     },
@@ -1891,7 +1891,7 @@
         "IsFlagArgument": false,
         "ParamFieldName": "$.CastleStatModifiers_Global.HeartLimits.Level2.ServantLimit",
         "IncludeInCommandLine": false,
-        "DefaultValue": 5,
+        "DefaultValue": 3,
         "MinValue": 0,
         "MaxValue": 35
     },
@@ -1906,7 +1906,7 @@
         "IsFlagArgument": false,
         "ParamFieldName": "$.CastleStatModifiers_Global.HeartLimits.Level2.HeightLimit",
         "IncludeInCommandLine": false,
-        "DefaultValue": 2,
+        "DefaultValue": 3,
         "MinValue": 0,
         "MaxValue": 255
     },
@@ -1936,7 +1936,7 @@
         "IsFlagArgument": false,
         "ParamFieldName": "$.CastleStatModifiers_Global.HeartLimits.Level3.ServantLimit",
         "IncludeInCommandLine": false,
-        "DefaultValue": 6,
+        "DefaultValue": 5,
         "MinValue": 0,
         "MaxValue": 35
     },
@@ -1996,7 +1996,7 @@
         "IsFlagArgument": false,
         "ParamFieldName": "$.CastleStatModifiers_Global.HeartLimits.Level4.HeightLimit",
         "IncludeInCommandLine": false,
-        "DefaultValue": 4,
+        "DefaultValue": 3,
         "MinValue": 0,
         "MaxValue": 255
     },
@@ -2041,7 +2041,7 @@
         "IsFlagArgument": false,
         "ParamFieldName": "$.CastleStatModifiers_Global.HeartLimits.Level5.HeightLimit",
         "IncludeInCommandLine": false,
-        "DefaultValue": 5,
+        "DefaultValue": 3,
         "MinValue": 0,
         "MaxValue": 255
     },
