@@ -1,0 +1,123 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema",
+  "type": "array",
+  "items": {
+    "$ref": "#/definitions/UpdateItem"
+  },
+  "definitions": {
+    "UpdateItem": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "UpdateStageName": {
+          "type": "string"
+        },
+        "UpdateSourcePlatform": {
+          "$ref": "#/definitions/Platform"
+        },
+        "UpdateSource": {
+          "$ref": "#/definitions/UpdateSource"
+        },
+        "UpdateSourceData": {
+          "type": "string"
+        },
+        "UpdateSourceArgs": {
+          "type": "string"
+        },
+        "ForceDownloadPlatform": {
+          "$ref": "#/definitions/Platform"
+        },
+        "UpdateSourceTarget": {
+          "type": "string"
+        },
+        "OverwriteExistingFiles": {
+          "type": "boolean"
+        },
+        "SkipOnFailure": {
+          "type": "boolean"
+        },
+        "UpdateSourceConditionSetting": {
+          "type": "string"
+        },
+        "UpdateSourceConditionValue": {
+          "type": "string"
+        },
+        "UnzipUpdateSource": {
+          "type": "boolean"
+        },
+        "DeleteAfterExtract": {
+          "type": "boolean"
+        },
+        "UpdateSourceVersion": {
+          "type": "string"
+        },
+        "UpdateSourceArch": {
+          "$ref": "#/definitions/UpdateSourceArch"
+        },
+        "UpdateSourceExtra": {
+          "type": "string"
+        },
+        "OneShot": {
+          "type": "boolean"
+        }
+      },
+      "required": [],
+      "title": "Update"
+    },
+    "Platform": {
+      "type": "string",
+      "enum": ["All", "Linux", "Windows"],
+      "title": "Platform"
+    },
+    "UpdateSource": {
+      "type": "string",
+      "enum": [
+        "SteamCMD",
+        "CreateDirectory",
+        "FetchURL",
+        "Executable",
+        "CopyFilePath",
+        "GithubRelease",
+        "CreateFile",
+        "SetExecutableFlag",
+        "Pause",
+        "StartApplication",
+        "WaitForStartupComplete",
+        "ShutdownApplication",
+        "FetchURLFromJQ",
+        "ExtractArchive",
+        "GitRepo"
+      ],
+      "title": "UpdateSource"
+    },
+    "UpdateSourceArch": {
+      "type": "string",
+      "enum": ["x86_64", "aarch64"],
+      "title": "UpdateSourceArch"
+    },
+    "BoolString": {
+      "type": "string",
+      "pattern": "^(TRUE|True|true|FALSE|False|false|YES|Yes|yes|NO|No|no|ON|On|on|OFF|Off|off|0|1|ENABLED|Enabled|enabled|DISABLED|Disabled|disabled|ENABLE|Enable|enable|DISABLE|Disable|disable)$"
+    },
+    "BoolOrString": {
+      "anyOf": [
+        {
+          "type": "boolean"
+        },
+        {
+          "$ref": "#/definitions/BoolString"
+        }
+      ]
+    },
+    "NullOrString": {
+      "anyOf": [
+        {
+          "type": "null"
+        },
+        {
+          "type": "string"
+        }
+      ]
+    }
+  }
+}
