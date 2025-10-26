@@ -10,7 +10,7 @@
         "IsFlagArgument": false,
         "ParamFieldName": "GameDifficulty",
         "IncludeInCommandLine": false,
-        "DefaultValue": "1",
+        "DefaultValue": "Normal",
         "EnumValues": {
             "0": "Relaxed - Bosses will in general not use too complex mechanics",
             "1": "Normal - Bosses will use the default mechanics",
@@ -45,7 +45,7 @@
         "IsFlagArgument": false,
         "ParamFieldName": "CastleDamageMode",
         "IncludeInCommandLine": false,
-        "DefaultValue": "Always",
+        "DefaultValue": "Never",
         "EnumValues": {
             "Always": "Always",
             "Never": "Never",
@@ -104,7 +104,7 @@
         "IsFlagArgument": false,
         "ParamFieldName": "CastleHeartDamageMode",
         "IncludeInCommandLine": false,
-        "DefaultValue": "CanBeDestroyedOnlyWhenDecaying",
+        "DefaultValue": "CanBeDestroyedByPlayers",
         "EnumValues": {
             "CanBeDestroyedOnlyWhenDecaying": "Can Be Destroyed Only When Decaying",
             "CanBeDestroyedByPlayers": "Can Be Destroyed By Players",
@@ -1088,7 +1088,7 @@
         "IsFlagArgument": false,
         "ParamFieldName": "Death_DurabilityFactorLoss",
         "IncludeInCommandLine": false,
-        "DefaultValue": 0.25,
+        "DefaultValue": 0.125,
         "MinValue": 0,
         "MaxValue": 1,
         "Suffix": "multiplier"
@@ -2864,7 +2864,7 @@
         "IsFlagArgument": false,
         "ParamFieldName": "ListOnSteam",
         "IncludeInCommandLine": false,
-        "DefaultValue": "true",
+        "DefaultValue": "false",
         "EnumValues": {
             "True": "true",
             "False": "false"
@@ -2881,7 +2881,7 @@
         "IsFlagArgument": false,
         "ParamFieldName": "ListOnEOS",
         "IncludeInCommandLine": false,
-        "DefaultValue": "true",
+        "DefaultValue": "false",
         "EnumValues": {
             "True": "true",
             "False": "false"
@@ -2898,7 +2898,7 @@
         "IsFlagArgument": false,
         "ParamFieldName": "AutoSaveCount",
         "IncludeInCommandLine": false,
-        "DefaultValue": "25",
+        "DefaultValue": "20",
         "EnumValues": {},
         "Suffix": "saves"
     },
