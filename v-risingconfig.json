@@ -2918,6 +2918,23 @@
         "Suffix": "seconds"
     },
     {
+        "DisplayName": "Compress Save Files",
+        "Category": "V Rising:stadia_controller",
+        "Subcategory": "Host:dns:7",
+        "Description": "Compress save files to save space",
+        "Keywords": "compress, save, files",
+        "FieldName": "CompressSaveFiles",
+        "InputType": "checkbox",
+        "IsFlagArgument": false,
+        "ParamFieldName": "CompressSaveFiles",
+        "IncludeInCommandLine": false,
+        "DefaultValue": "true",
+        "EnumValues": {
+            "True": "true",
+            "False": "false"
+        }
+    },
+    {
         "DisplayName": "Game Settings Ruleset",
         "Category": "V Rising:stadia_controller",
         "Subcategory": "Host:dns:7",
