@@ -2774,8 +2774,8 @@
         "FieldName": "LowerFPSWhenEmpty",
         "InputType": "checkbox",
         "IsFlagArgument": false,
-        "ParamFieldName": "lowerFPSWhenEmpty",
-        "IncludeInCommandLine": true,
+        "ParamFieldName": "LowerFPSWhenEmpty",
+        "IncludeInCommandLine": false,
         "DefaultValue": "true",
         "EnumValues": {
             "True": "true",
@@ -2791,9 +2791,9 @@
         "FieldName": "LowerFPSWhenEmptyValue",
         "InputType": "number",
         "IsFlagArgument": false,
-        "ParamFieldName": "lowerFPSWhenEmptyValue",
+        "ParamFieldName": "LowerFPSWhenEmptyValue",
         "DefaultValue": "15",
-        "IncludeInCommandLine": true,
+        "IncludeInCommandLine": false,
         "Suffix": "FPS"
     },
     {
